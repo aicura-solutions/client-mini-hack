@@ -1,0 +1,250 @@
+/*-----------------------------------*\
+  CDN Imports
+\*-----------------------------------*/
+ 
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+
+/*-----------------------------------*\
+  HTML Elements
+\*-----------------------------------*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fdf9f3;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+::selection {
+    background-color: #f35626;
+    color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Serif';
+}
+
+a,
+a:visited {
+    color: #f35626;
+}
+
+a:hover {
+    color: #feab3a;
+    transition: 200ms;
+}
+
+form {
+    margin: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    line-height: 1.3em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f08e70;
+    transition: 500ms;
+}
+
+input:invalid {
+    border-color: #cc0000;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #e0e0e0;
+}
+
+button,
+.button,
+a.button {
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 8px 12px;
+    width: auto;
+    overflow: visible;
+    background: #18b35d;
+    color: #fff;
+    font: inherit;
+    line-height: normal;
+    text-decoration: none;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    transition: 100ms;
+}
+
+button:hover,
+.button:hover {
+    cursor: pointer;
+}
+
+button:active,
+.button:active {
+    cursor: pointer;
+    background-color: #1d8b4f;
+    transition: 200ms;
+}
+
+button:focus,
+.button:focus {
+    outline: none;
+}
+
+button:disabled:hover,
+.button:disabled:hover {
+    cursor: default;
+}
+
+/*-----------------------------------*\
+  CSS Classes
+\*-----------------------------------*/
+
+.site-title {
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    animation: hue 60s infinite linear;
+}
+
+.input-group {
+    display: block;
+}
+
+.input-group ~ .input-group {
+    margin-top: 22px;
+}
+
+.input-group > label {
+    display: block;
+    font-size: 14px;
+    color: #6a6a6a;
+    margin-bottom: 3px;
+}
+
+.input-group > input,
+.input-group > textarea {
+    display: block;
+    width: 100%;
+    background-color: #fafafa; 
+}
+
+.grid-layout {
+    margin: 0 auto;
+    padding: 16px 22px 32px;
+    max-width: 100%;
+}
+
+.grid-intro {
+    margin-bottom: 24px; 
+}
+
+.grid-intro p {
+    font-size: 16px;
+    color: #6a6a6a;
+}
+
+.grid-form {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 32px;
+    box-shadow: 0 3px 8px #e0e0e0;
+}
+
+.grid-form p {
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.confirmation-message {
+    display: grid;
+}
+
+.confirmation-message .action {
+    align-self: end;
+}
+
+/*-----------------------------------*\
+  Responsive design
+\*-----------------------------------*/
+
+@media screen and (min-width: 600px) {
+    .site-title {
+        text-align: left;
+    }
+
+    .grid-intro {
+        margin: 0;
+    }
+
+    .grid-intro p {
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .grid-layout {
+        max-width: 80%;
+        padding: 32px 0;
+        display: grid;
+        grid-template-columns: 33% 67%;
+        grid-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .grid-layout {
+        width: 60%;
+        max-width: 900px;
+    }
+}
+
+/*-----------------------------------*\
+  Keyframe animations
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(-360deg);
+    }
+}

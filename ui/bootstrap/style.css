@@ -1,0 +1,13 @@
+html {
+    background-color: #fcfcfc;
+}
+
+body {
+    padding-bottom: 120px;
+}
+
+.jumbotron {
+    color: white;
+    background-color: #e86e42;
+    border-radius: 0;
+}

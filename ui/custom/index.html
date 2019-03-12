@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Example Form</title>
+    </head>
+    <body>
+
+        <div class="grid-layout" aria-describedby="intro">
+            <div class="grid-intro">
+                <h1 class="site-title">Hello there,</h1>
+                <p id="intro">Welcome to this example of a <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsively designed</a> website.</p>
+                <p id="purpose">The purpose of this code is to demonstrate the core essentials of creating a typical HTML form and submitting the data to a server.</p>
+            </div>
+            <form role="form" class="grid-form" action="#" method="POST" aria-describedby="purpose">
+                <div class="input-group">
+                    <label for="forename">Forename</label>
+                    <input type="text" name="forename" id="forename" placeholder="John">
+                </div>
+
+                <div class="input-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Smith">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="john@smith.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="07000 192837">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Message</label>
+                    <textarea name="message" id="message" rows="5"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
