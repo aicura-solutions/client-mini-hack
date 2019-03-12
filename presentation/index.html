@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/aicura.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					# Open Source
+
+					notes:
+					- I believe open source is for everybody
+					- Yes you!
+					- It is not just for techies
+				</section>
+				<section data-markdown>
+					## Why Open Source
+
+					Transparency, Visibility, Collaboration
+
+					notes:
+					- Higher quality, not just features and bugs but including security, performance, accessibility
+					- Maintainers + Contributors are both proud of their work - friends, colleagues, future employers can see
+					- Great way to hire people
+				</section>
+				<section data-markdown>
+					## Why not Open Source
+
+					notes:
+					- passwords / tokens / private keys / secrets are not a reason
+				</section>
+				<section data-markdown>
+					## What is Open Source
+
+					Social coding
+
+					notes:
+					- GitHub the main platform for open source strapline is “social coding”
+					- Now it has recipes, blogs, templates, books, science, education, legal documents etc
+					- open hardware designs, robots, cars, houses etc
+				</section>
+				<section data-markdown>
+					## Who
+
+					Google, Microsoft, Netflix, Facebook, Twitter, Adobe, Guardian, Uber, Amazon
+					Monzo, Starling Bank, Revolut, FreeAgent, Governments
+
+					notes:
+					- Lloyds have just started, sent their team to GitHub Universe
+					- Their 2019 mission as a group is open source first
+					- Collaborating with the challenger banks (already with Monzo)
+				</section>
+				<section data-markdown>
+					## Example projects
+
+					Angular, React, Bootstrap, Material, NodeJS
+
+					notes:
+					- Some of these haver over 30k contributors
+				</section>
+				<section data-markdown>
+					## Projects
+
+					96M+ repos, 200M+ contributions
+
+					notes:
+					- Vscode 20k contributors
+					- Angular 10k contributors
+					- Trends: javascript is the most popular language
+				</section>
+				<section data-markdown>
+					## People
+
+					31M+ people, 8M+ new people, 2.1M+ organisations
+
+					notes:
+					- Organisations on Github grew by 40% last year alone
+				</section>
+				<section data-markdown>
+					## Open Source Benefits
+
+					notes:
+					- Larger community, higher quality
+				</section>
+				<section data-markdown>
+					## GitHub Benefits
+
+					notes:
+					- Market Place with many integrations
+				</section>
+				<section data-markdown>
+					## Responsibilities
+
+					notes:
+					- Maintainers need to response quickly otherwise people will lose interest
+					- Living project
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Push each slide change to the browser history
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
