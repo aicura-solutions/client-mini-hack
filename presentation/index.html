@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/aicura.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						# Open Source
+
+						notes:
+						- I believe open source is for everybody
+						- Yes you!
+						- It is not just for techies
+						- It doesn't care what you do, what your job title is, how much you earn, what you are wearing
+						- The only thing open source cares about is you pay it a visit, few hours, or few weeks
+					</section>
+					<section data-markdown>
+						## Why Open Source
+
+						Transparency, Visibility, Collaboration, Authenticity
+
+						notes:
+						- People want to be part of something bigger than themselves
+						- Higher quality, not just features and less bugs but including security, performance, accessibility
+						- Maintainers + Contributors are both proud of their work - friends, colleagues, future employers can see
+						- Great way to hire people - they know your team, your project
+					</section>
+					<section data-markdown>
+						## What is Open Source
+
+						Social coding
+
+						notes:
+						- GitHub the main platform for open source strapline is “social coding”
+						- Facebook / Instagram for code
+						- Now it has recipes, blogs, templates, books, science, education, legal documents etc
+						- open hardware designs including robots, cars, houses, bridges etc
+					</section>
+					<section data-markdown>
+						## Who
+
+						Google, Microsoft, Netflix, Facebook, Twitter, Adobe, Guardian, Uber, Amazon,
+						Monzo, Starling Bank, Revolut, FreeAgent, Governments
+
+						notes:
+						- Lloyds have just started, sent their team to GitHub Universe
+						- Their 2019 mission as a group is open source first
+						- Collaborating with the challenger banks (already with Monzo)
+						- Lloyds have realised they don't need faster horses, they need cars
+					</section>
+					<section data-markdown>
+						## Example projects
+
+						Angular, React, Bootstrap, Material, NodeJS
+
+						notes:
+						- Some of these have over 30k contributors
+					</section>
+					<section data-markdown>
+						## Projects
+
+						96M+ repos, 200M+ contributions
+
+						notes:
+						- Vscode 20k contributors
+						- Angular 10k contributors
+						- People hours: 20k -> 10k -> 1hour a month -> 5k x 1hr = over 625 working days = team of over 30
+						- Trends: javascript is the most popular language
+					</section>
+					<section data-markdown>
+						## People
+
+						31M+ people, 8M+ new people, 2.1M+ organisations
+
+						notes:
+						- Organisations on Github grew by 40% last year alone
+					</section>
+					<section data-markdown>
+						## Open Source Benefits
+
+						notes:
+						- Larger community, higher quality
+					</section>
+					<section data-markdown>
+						## GitHub Benefits
+
+						notes:
+						- Market Place with many integrations
+					</section>
+					<section data-markdown>
+						## Responsibilities
+
+						notes:
+						- Maintainers need to response quickly otherwise people will lose interest
+						- Living project
+						- Marathon not a sprint
+					</section>
+					<section data-markdown>
+						## Why not Open Source
+
+						notes:
+						- passwords / tokens / private keys / secrets are not a reason
+					</section>
+					<section data-markdown>
+						## Conclusion
+
+						notes:
+						- Open source is like going to the gym, to get the benefit you need to put in the effort
+						- You don't need a faster horse, you need a car
+					</section>
+					<section data-markdown>
+						## Demo
+					</section>
+					<section data-markdown>
+						## Questions
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Mini hackathon
+
+						Requirements
+						- Laptop
+						- Internet
+						- GitHub account
+					</section>
+					<section data-markdown>
+						## Mini hackathon
+
+						Steps
+						- Create an open source project
+						- Make a web page
+						- Add a form to the web page
+						- Send the form to our API
+					</section>
+					<section data-markdown>
+						## Demo
+					</section>
+					<section data-markdown>
+						## Questions
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Push each slide change to the browser history
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

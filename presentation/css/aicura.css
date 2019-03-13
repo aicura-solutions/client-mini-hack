@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(59, 67, 78);
+    background-image: url("../img/aicura.png");
+    background-repeat: no-repeat;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal p {
+    color: rgb(251, 94, 42);
+}
