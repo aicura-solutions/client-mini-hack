@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Form</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="content">
+                <div class="logo"><img src="./assets/aicura.png"></div>
+                <div class="title">
+                    <h1>Aicura Solutions Mini-Hack</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid-layout" aria-describedby="intro">
+            <div class="grid-intro">
+                <h2 class="grid-title">Hello there,</h2>
+                <p id="intro">Welcome to this example of a <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsively designed</a> website.</p>
+                <p id="purpose">The purpose of this code is to demonstrate the core essentials of creating a typical HTML form and submitting the data to a server.</p>
+            </div>
+            <form role="form" class="grid-form" action="http://localhost:3000/email" method="POST" aria-describedby="purpose">
+                <h1>About you</h1>
+
+                <div class="input-group">
+                    <label for="forename">
+                        Name
+                        <span>example: John Smith</span>
+                    </label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">
+                        Your email address
+                        <span>example: johnsmith@example.com</span>
+                    </label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="tel">
+                        Your telephone number
+                        <span>Preferred contact number</span>
+                    </label>
+                    <input type="tel" name="tel" id="tel" placeholder="07000 777777">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">
+                        Your message
+                        <span>What would you like to tell us?</span>
+                    </label>
+                    <textarea name="message" id="message" rows="7"></textarea>
+                </div>
+
+                <div class="input-group checkbox">
+                    <label for="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        Are you having a good time?
+                    </label>
+                </div>
+
+                <div class="input-group action">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
