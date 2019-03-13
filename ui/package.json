@@ -2,7 +2,7 @@
     "name": "ui",
     "version": "1.0.0",
     "scripts": {
-        "start": "serve -p 4200 custom"
+        "start": "serve -p 4200 modern"
     },
     "dependencies": {
         "serve": "10.1.2"
