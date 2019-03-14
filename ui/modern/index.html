@@ -9,7 +9,7 @@
 
         <header>
             <div class="content">
-                <div class="logo"><img src="/assets/aicura.png"></div>
+                <div class="logo"><img src="./assets/aicura.png"></div>
                 <div class="title">
                     <h1>Aicura Solutions Mini-Hack</h1>
                 </div>
@@ -22,7 +22,7 @@
                 <p id="intro">Welcome to this example of a <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsively designed</a> website.</p>
                 <p id="purpose">The purpose of this code is to demonstrate the core essentials of creating a typical HTML form and submitting the data to a server.</p>
             </div>
-            <form role="form" class="grid-form" action="http://localhost:3000/email" method="POST" aria-describedby="purpose">
+            <form role="form" class="grid-form" action="https://j199mupghf.execute-api.eu-west-1.amazonaws.com/dev/email" method="POST" aria-describedby="purpose">
                 <h1>About you</h1>
 
                 <div class="input-group">
@@ -63,6 +63,8 @@
                         Are you having a good time?
                     </label>
                 </div>
+
+                <input type="hidden" name="_redirect" value="client-mini-hack/ui/modern">
 
                 <div class="input-group action">
                     <button type="submit">Send</button>

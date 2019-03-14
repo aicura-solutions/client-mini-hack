@@ -256,10 +256,8 @@
                                     <td>
                                         <h1 style="color: #f35626;">Hello,</h1>
                                         <% for(let key of Object.keys(data)) { %>
-                                        <p>
-                                            <h2><%= key %>:</h2>
-                                            <pre><%= data[key] %></pre>
-                                        </p>
+                                        <p><strong style="text-transform:capitalize;"><%= key %>:</strong></p>
+                                        <p><%- data[key].replace(/\n/g, '<br>') %></p>
                                         <% } %>
                                     </td>
                                 </tr>

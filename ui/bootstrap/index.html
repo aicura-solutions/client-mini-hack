@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-6 offset-3">
 
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="https://j199mupghf.execute-api.eu-west-1.amazonaws.com/dev/email" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="forename">Forename</label>
                         <input type="text" class="form-control" id="forename" name="forename" placeholder="John">
@@ -44,6 +44,8 @@
                         <label for="message">Your message</label>
                         <textarea class="form-control" id="message" rows="5" required></textarea>
                     </div>
+
+                    <input type="hidden" name="_redirect" value="client-mini-hack/ui/bootstrap">
 
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>

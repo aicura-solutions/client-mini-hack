@@ -25,8 +25,8 @@ export class EmailModule {
         const subject = 'Aicura Solutions - Mini Hack';
         let destinationEmail = [process.env.DESTINATION];
 
-        if (req.body.emailAddress) {
-            destinationEmail = [...destinationEmail, req.body.emailAddress];
+        if (req.body.email) {
+            destinationEmail = [...destinationEmail, req.body.email];
         }
 
         const mailer = new MailService(subject, config.replyTo, destinationEmail);
@@ -38,8 +38,10 @@ export class EmailModule {
             console.log(error);
         }
 
+        const path = req.body._redirect;
+
         const origin = req.headers.origin || req.headers.referer || '';
-        const redirect = new URL(`${origin}/confirm.html`);
+        const redirect = new URL(`${origin}/${path}/confirm.html`);
 
         res.redirect(redirect.toString());
     }
